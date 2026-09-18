@@ -28,7 +28,7 @@ app.add_middleware(
 )
 
 # API Routes - prefix with /api to avoid conflicts with frontend routes
-app.include_router(inventory_router, prefix="/api/inventory", tags=["Inventory Items"])
+app.include_router(inventory_router, prefix="", tags=["Inventory Items"])
 
 @app.get("/api/health")
 async def health_check():
